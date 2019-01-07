@@ -1,0 +1,1606 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin="" />
+  <!-- <link href='http://fonts.googleaois.com/css?family=pt+Sans:700' rel='stylesheet' type='text/css'> -->
+  <script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js" crossorigin="">
+  </script>
+
+  <style>
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  
+  <!-- <script src="js/jquery.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/script-blank.js"></script> -->
+
+  <h1>Ibn batota</h1>
+  <select id="selectCountry">
+    
+</select>
+  <button id= "get">&#128269</button>
+  <div id="mapid"></div>
+  <script src='js/main.js' type="text/javascript"></script>
+  </style>
+  <!-- <script type="text/javascript" charset="UTF-8" src="./ibn_batota/onion.js.Download"></script>
+  <script type="text/javascript" charset="UTF-8" src="./World map with countries name and flags_files/infowindow.js.Download"></script>
+  <script type="text/javascript" charset="UTF-8" src="./World map with countries name and flags_files/marker.js.Download"></script>
+  <script type="text/javascript" charset="UTF-8" src="./World map with countries name and flags_files/controls.js.Download"></script>
+  <script type="text/javascript" charset="UTF-8" src="./World map with countries name and flags_files/stats.js.Download"></script> -->
+  </head>
+
+  <body>
+    <div class="flags"></div>
+    <table width="1024" height="768" border="0" align="center" cellpadding="0" cellspacing="0" id="Table_01">
+      <tbody>
+        <tr>
+          <tr>
+            <td>
+              <table width="800" align="center" cellspacing="20">
+                <tbody>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/af.png" alt="afaganistan flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.afghanistan.searchmap.eu/">Afghanistan</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/al.png" alt="albania flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.albania.searchmap.eu/">Albania</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/dz.png" alt="algeria flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.algeria.searchmap.eu/">Algeria</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/ad.png" alt="andorra flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.andorra.searchmap.eu/">Andorra</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/ao.png" alt="angola flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.angola.searchmap.eu/">Angola</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/antigua-barbuda.png" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.antigua-barbuda.searchmap.eu/">Antigua Barbuda</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/argentina.png" alt="argentina flag" width="60" height="30">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.argentina.searchmap.eu/">Argentina</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/armenia.png" alt="armenia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.armenia.searchmap.eu/">Armenia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/australia.png" alt="australia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.australia.searchmap.eu/">Australia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/austria.png" alt="austria flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.austria.searchmap.eu/">Austria</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/azerbaijan.png" alt="azerbaijan flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.azerbaijan.searchmap.eu/">Azerbaijan</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/bahamas.png" alt="bahamas flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.bahamas.searchmap.eu/" title="See Bahamas map">Bahamas</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/bangladesh.png" alt="bangladesh flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.bangladesh.searchmap.eu/">Bangladesh</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/bahrain.png" alt="bahrain flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.bahrain.searchmap.eu/">Bahrain</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/barbados.png" alt="barbados flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.barbados.searchmap.eu/">Barbados</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/belarus.png" alt="belarus flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.belarus.searchmap.eu/">Belarus</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/belgium.png" alt="belgium flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.belgium.searchmap.eu/">Belgium</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/belize.png" alt="belize flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.belize.searchmap.eu/">Belize</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/benin.png" alt="benin flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.benin.searchmap.eu/">Benin</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/bhutan.png" alt="bhutan flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.bhutan.searchmap.eu/">Bhutan</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/bolivia.png" alt="bolivia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.bolivia.searchmap.eu/">Bolivia</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/bosnia-herzegovina.png" alt="bosnia herzegovina flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.bosnia-herzegovina.searchmap.eu/">Bosnia Herzegovina</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/botswana.png" alt="botswana flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.botswana.searchmap.eu/">Botswana</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/brazil.png" alt="brazil flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.brazil.searchmap.eu/">Brazil</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/brunei.png" alt="brunei flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.brunei.searchmap.eu/">Brunei</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/bulgaria.png" alt="bulgaria flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.bulgaria.searchmap.eu/">Bulgaria</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/burkina-faso.png" alt="burkina faso flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.burkina-faso.searchmap.eu/">Burkina Faso</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/burundi.png" alt="burundi flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.burundi.searchmap.eu/">Burundi</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/cambodia.png" alt="cambodia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.cambodiai.searchmap.eu/">Cambodia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/cameroon.png" alt="cameroon flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.cameroon.searchmap.eu/">Cameroon</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/canada.png" alt="canada flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.canada.searchmap.eu/">Canada</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/cape-verde.png" alt="cape-verde flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.cape-verde.searchmap.eu/">Cape Verde</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/central-african-republic.png" alt="central-african-republic flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.central-africa.searchmap.eu/">Central Africa</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/chad.png" alt="chad flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.chad.searchmap.eu/">Chad</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/chile.png" alt="chile flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.chile.searchmap.eu/">Chile</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/china.png" alt="china flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.china.searchmap.eu/">China</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/colombia.png" alt="colombia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.colombia.searchmap.eu/">Colombia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/comoros.png" alt="comoros flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.comoros.searchmap.eu/">Comoros</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/congo.png" alt="congo flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.congo.searchmap.eu/">Congo</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/costa-rica.png" alt="costa-rica flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.costa-rica.searchmap.eu/">Costa Rica</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/cote-ivoire.png" alt="cote-ivoire flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Cote D'Ivoire</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/croatia.png" alt="croatia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.croatia.searchmap.eu/">Croatia</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/cuba.png" alt="cuba flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.cuba.searchmap.eu/">Cuba</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/cyprus.png" alt="cyprus flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.cyprus.searchmap.eu/">Cyprus</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/czech-republic.png" alt="czech-republic flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Czech Republic</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/denmark.png" alt="denmark flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.denmark.searchmap.eu/">Denmark</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/djibouti.png" alt="djibouti flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Djibouti</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/dominica.png" alt="dominica flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Dominica</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/dominican-republic.png" alt="dominican republic flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Dominican Republic</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/east-timor.png" alt="east-timor flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">East Timor</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/ecuador.png" alt="ecuador flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.ecuador.searchmap.eu/">Ecuador</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/egypt.png" alt="egypt flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.egypt.searchmap.eu/">Egypt</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/el-salvador.png" alt="el-salvador flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.el-salvador.searchmap.eu/">El Salvador</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/eritrea.png" alt="eritrea flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.eritrea.searchmap.eu/">Eritrea</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/estonia.png" alt="estonia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.estonia.searchmap.eu/">Estonia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/ethiopia.png" alt="ethiopia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.ethiopia.searchmap.eu/">Ethiopia</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/fiji.png" alt="fiji flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.fiji.searchmap.eu/">Fiji</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/finland.png" alt="finland flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.finlandi.searchmap.eu/">Finland</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/france.png" alt="france flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.france.searchmap.eu/">France</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/gabon.png" alt="gabon flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.gabon.searchmap.eu/">Gabon</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/gambia.png" alt="gambia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.gambia.searchmap.eu/">Gambia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/georgia.png" alt="georgia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.georgia.searchmap.eu/">Georgia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/germany.png" alt="germany flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.germany.searchmap.eu/">Germany</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/ghana.png" alt="ghana flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.ghana.searchmap.eu/">Ghana</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/great-britain.png" alt="great-britain flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.united-kingdom.searchmap.eu/">Great Britain</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/greece.png" alt="greece flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.greece.searchmap.eu/">Greece</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/grenada.png" alt="grenada flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.grenada.searchmap.eu/">Grenada</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/guatemala.png" alt="guatemala flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.guatemala.searchmap.eu/">Guatemala</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/guinea.png" alt="guinea flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.guinea.searchmap.eu/">Guinea</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/guinea-bissau.png" alt="guinea-bissau flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Guinea Bissau</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/guinea-equatorial.png" alt="guinea-equatorial flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Guinea Equatorial</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/guyana.png" alt="guyana flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.guyana.searchmap.eu/">Guyana</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/haiti.png" alt="haiti flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.haiti.searchmap.eu/">Haiti</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/honduras.png" alt="honduras flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.honduras.searchmap.eu/">Honduras</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/hungary.png" alt="hungary flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Hungary</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/iceland.png" alt="iceland flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.iceland.searchmap.eu/">Iceland</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/india.png" alt="india flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.india.searchmap.eu/">India</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/indonesia.png" alt="indonesia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.indonesia.searchmap.eu/">Indonesia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/iran.png" alt="iran flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.iran.searchmap.eu/">Iran</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/iraq.png" alt="iraq flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.iraq.searchmap.eu/">Iraq</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/ireland.png" alt="ireland flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.ireland.searchmap.eu/">Ireland</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/palestin.png" alt="palestin flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="https://www.palestineposterproject.org/poster/freedom-palestine-0">palestin</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/italy.png" alt="italy flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.italy.searchmap.eu/">Italy</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/jamaica.png" alt="jamaica flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.jamaica.searchmap.eu/">Jamaica</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/japan.png" alt="japan flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.japan.searchmap.eu/">Japan</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/jordan.png" alt="jordan flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.jordan.searchmap.eu/">Jordan</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/kazakhstan.png" alt="kazakhstan flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.kazakhstan.searchmap.eu/">Kazakhstan</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/kenya.png" alt="kenya flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.kenya.searchmap.eu/">Kenya</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/kiribati.png" alt="kiribati flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Kiribati</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/kosovo.png" alt="kosovo flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Kosovo</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/kuwait.png" alt="kuwait flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.kuwait.searchmap.eu/">Kuwait</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/kyrgyzstan.png" alt="kyrgyzstan flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.kyrgyzstan.searchmap.eu/">Kyrgyzstan</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/laos.png" alt="laos flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.laos.searchmap.eu/">Laos</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/latvia.png" alt="latvia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.latvia.searchmap.eu/">Latvia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/lebanon.png" alt="lebanon flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.lebanon.searchmap.eu/">Lebanon</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/lesotho.png" alt="lesotho flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.lesotho.searchmap.eu/">Lesotho</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/liberia.png" alt="liberia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.liberia.searchmap.eu/">Liberia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/libya.png" alt="libya flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.libya.searchmap.eu/">Libya</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/liechtenstein.png" alt="liechtenstein flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.liechtenstein.searchmap.eu/">Liechtenstein</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/lithuania.png" alt="lithuania flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.lithuania.searchmap.eu/">Lithuania</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/luxembourg.png" alt="luxembourg flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.luxembourg.searchmap.eu/">Luxembourg</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/macedonia.png" alt="macedonia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.macedonia.searchmap.eu/">Macedonia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/madagascar.png" alt="madagascar flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.madagascar.searchmap.eu/">Madagascar</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/malawi.png" alt="malawi flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.malawi.searchmap.eu/">Malawi</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/malaysia.png" alt="malaysia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.malaysia.searchmap.eu/">Malaysia</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/maldives.png" alt="maldives flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.maldives.searchmap.eu/">Maldives</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/mali.png" alt="mali flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.mali.searchmap.eu/">Mali</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/malta.png" alt="malta flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.malta.searchmap.eu/">Malta</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/marshall-islands.png" alt="marshall-islands flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Marshall Islands</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/mauritania.png" alt="mauritania flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Mauritania</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/mauritius.png" alt="mauritius flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Mauritius</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/mexico.png" alt="mexico flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.malta.searchmap.eu/">Mexico</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/micronesia.png" alt="micronesia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Micronesia</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/moldova.png" alt="moldova flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.moldova.searchmap.eu/" title="See map of Moldova">Moldova</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/monaco.png" alt="monaco flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.monaco.searchmap.eu/">Monaco</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/mongolia.png" alt="mongolia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.mongolia.searchmap.eu/">Mongolia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/montenegro.png" alt="montenegro flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.montenegro.searchmap.eu/">Montenegro</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/morocco.png" alt="morocco flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.morocco.searchmap.eu/">Morocco</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/mozambique.png" alt="mozambique flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.mozambique.searchmap.eu/">Mozambique</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/myanmar.png" alt="myanmar flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.myanmar.searchmap.eu/">Myanmar</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/namibia.png" alt="namibia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.namibia.searchmap.eu/">Namibia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/nauru.png" alt="nauru flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Nauru</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/nepal.png" alt="nepal flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.nepal.searchmap.eu/">Nepal</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/netherlands.png" alt="netherlands flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.netherlands.searchmap.eu/">Netherlands</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/new-zealand.png" alt="new-zealand flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.new-zealand.searchmap.eu/" title="See map of New Zealand">New Zealand</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/nicaragua.png" alt="nicaragua flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.nicaragua.searchmap.eu/">Nicaragua</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/niger.png" alt="niger flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.niger.searchmap.eu/">Niger</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/nigeria.png" alt="nigeria flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.nigeria.searchmap.eu/">Nigeria</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/north-korea.png" alt="north korea flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.north-korea.searchmap.eu/">North Korea</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/norway.png" alt="norway flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.norway.searchmap.eu/">Norway</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/oman.png" alt="oman flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.oman.searchmap.eu/">Oman</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/pakistan.png" alt="pakistan flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.pakistan.searchmap.eu/">Pakistan</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/palau.png" alt="palau flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Palau</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/panama.png" alt="panama flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.panama.searchmap.eu/">Panama</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/papaua-new-guinea.png" alt="papaua new guinea flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Papaua New Guinea</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/paraguay.png" alt="paraguay flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.paraguay.searchmap.eu/">Paraguay</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/peru.png" alt="peru flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.peru.searchmap.eu/">Peru</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/philippines.png" alt="philippines flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.philippines.searchmap.eu/">Philippines</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/poland.png" alt="poland flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.poland.searchmap.eu/">Poland</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/portugal.png" alt="portugal flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.portugal.searchmap.eu/">Portugal</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/qatar.png" alt="qatar flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.qatar.searchmap.eu/">Qatar</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/republic-congo.png" alt="Republic Congo flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Republic Congo</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/republic-of-china.png" alt="republic of china flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.china.searchmap.eu/">Republic of China</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/romania.png" alt="romania flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.harta-romaniei-3d.eu/">Romania</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/russia.png" alt="russia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.russia.searchmap.eu/">Russia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/rwanda.png" alt="rwanda flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.rwanda.searchmap.eu/">Rwanda</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/saint-kitts-nevis.png" alt="Saint Kitts Nevis flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Saint Kitts Nevis</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/saint-lucia.png" alt="saint-lucia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Saint Lucia</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/saint-vincent-grenadines.png" alt="saint vincent grenadines flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Saint Vincent Grenadines</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/samoa.png" alt="samoa flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.samoa.searchmap.eu/">Samoa</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/san-marino.png" alt="san-marino flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.san-marino.searchmap.eu/">San Marino</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/sao-tome-principe.png" alt="sao tome principe flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Sao Tome Principe</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/saudi-arabia.png" alt="saudi-arabia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Saudi Arabia</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/senegal.png" alt="senegal flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.senegal.searchmap.eu/">Senegal</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/serbia.png" alt="serbia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.serbia.searchmap.eu/">Serbia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/seychelles.png" alt="seychelles flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Seychelles</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/sierra-leone.png" alt="sierra leone flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Sierra Leone</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/singapore.png" alt="singapore flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.singapore.searchmap.eu/">Singapore</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/slovakia.png" alt="slovakia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.slovakia.searchmap.eu/">Slovakia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/slovenia.png" alt="slovenia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.slovenia.searchmap.eu/">Slovenia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/solomon-islands.png" alt="solomon islands flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Solomon Islands</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/somalia.png" alt="somalia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Somalia</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/south-africa.png" alt="south africa flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.south-africa.searchmap.eu/">South Africa</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/south-korea.png" alt="south korea flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.south-korea.searchmap.eu/">South Korea</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/spain.png" alt="spain flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.spain.searchmap.eu/">Spain</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/sri-lanka.png" alt="sri lanka flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Sri Lanka</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/sudan.png" alt="sudan flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.sudan.searchmap.eu/">Sudan</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/suriname.png" alt="suriname flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.suriname.searchmap.eu/">Suriname</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/swaziland.png" alt="swaziland flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Swaziland</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/sweden.png" alt="sweden flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.sweden.searchmap.eu/">Sweden</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/switzerland.png" alt="switzerland flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.switzerland.searchmap.eu/">Switzerland</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/syria.png" alt="syria flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="https://syriafreedomforever.wordpress.com/">Syria</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/tajikistan.png" alt="tajikistan flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.tajikistan.searchmap.eu/">Tajikistan</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/tanzania.png" alt="tanzania flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.tanzania.searchmap.eu/">Tanzania</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/thailand.png" alt="thailand flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.thailand.searchmap.eu/">Thailand</a>
+                      </h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/togo.png" alt="togo flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Togo</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/tonga.png" alt="tonga flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Tonga</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/trinidad-tabago.png" alt="trinidad tabago flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Trinidad Tabago</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/tunisia.png" alt="tunisia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.tunisia.searchmap.eu/">Tunisia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/turkey.png" alt="turkey flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.turkey.searchmap.eu/">Turkey</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/turkmenistan.png" alt="turkmenistan flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.turkmenistan.searchmap.eu/">Turkmenistan</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/tuvalu.png" alt="tuvalu flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Tuvalu</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/uganda.png" alt="uganda flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.uganda.searchmap.eu/">Uganda</a>
+                      </h2>
+                    </td>
+
+                    <td>
+                      <p align="center">
+                        <img src="img/ukraine.png" alt="ukraine flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.ukraine.searchmap.eu/">Ukraine</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/united-arab-emirates.png" alt="united arab emirates flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">United Arab Emirates</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/united-states.png" alt="united states flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.united-states.searchmap.eu/">United States</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/uruguay.png" alt="uruguay flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.uruguay.searchmap.eu/">Uruguay</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/uzbekistan.png" alt="uzbekistan flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.uruguay.searchmap.eu/">Uzbekistan</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/vanuatu.png" alt="vanuatu flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Vanuatu</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p align="center">
+                        <img src="img/vatican-city.png" alt="vatican city flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Vatican City</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/venezuela.png" alt="venezuela flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.venezuela.searchmap.eu/">Venezuela</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/vietnam.png" alt="vietnam flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.vietnam.searchmap.eu/">Vietnam</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/western-sahara.png" alt="western sahara flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">Western Sahara</h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/yemen.png" alt="yemen flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.yemen.searchmap.eu/">Yemen</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/zambia.png" alt="zambia flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.zambia.searchmap.eu/">Zambia</a>
+                      </h2>
+                    </td>
+                    <td>
+                      <p align="center">
+                        <img src="img/zimbabwe.png" alt="zimbabwe flag" width="60" height="35">
+                      </p>
+                      <h2 align="center">
+                        <a href="http://www.zimbabwe.searchmap.eu/">Zimbabwe</a>
+                      </h2>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+      </tbody>
+    </table>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+
+  </body>
+
+</html>
